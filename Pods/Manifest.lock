@@ -1,0 +1,10 @@
+PODS:
+  - UICollectionView+NSFetchedResultsController (1.2.1)
+
+DEPENDENCIES:
+  - UICollectionView+NSFetchedResultsController
+
+SPEC CHECKSUMS:
+  UICollectionView+NSFetchedResultsController: 1d53aef16f1a6371a1c58eba701f40740826f8c8
+
+COCOAPODS: 0.39.0

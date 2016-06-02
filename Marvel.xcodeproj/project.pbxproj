@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3CA8337DE785150E8389A3 /* libPods-Marvel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EA5B6017E7BE33456FF140 /* libPods-Marvel.a */; };
+		843F80701CF847A30041470E /* MADDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F806F1CF847A30041470E /* MADDownloader.m */; };
+		843F80741CF8552C0041470E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F80731CF8552C0041470E /* NSString+MD5.m */; };
+		843F80761CF85E8C0041470E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F80751CF85E8C0041470E /* Default-568h@2x.png */; };
+		8453E7381CFCCB960056F102 /* MADHeroDescriprionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453E7371CFCCB960056F102 /* MADHeroDescriprionViewController.m */; };
+		8453E73B1CFCCCFA0056F102 /* MADAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453E73A1CFCCCFA0056F102 /* MADAnimator.m */; };
+		8453E7401CFDA83A0056F102 /* MADHero+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */; };
+		8453E7411CFDA83A0056F102 /* MADHero.m in Sources */ = {isa = PBXBuildFile; fileRef = 8453E73F1CFDA83A0056F102 /* MADHero.m */; };
+		848E5B441CF879430055A64B /* MADHeroesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B431CF879430055A64B /* MADHeroesParser.m */; };
+		848E5B471CF9D68C0055A64B /* MADCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */; };
+		848E5B4A1CF9DC810055A64B /* Marvel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */; };
+		848E5B631CFA0B1E0055A64B /* MADCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */; };
+		848E5B641CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */; };
+		84C1F91F1CF44F8A001DD637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F91E1CF44F8A001DD637 /* main.m */; };
+		84C1F9221CF44F8A001DD637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9211CF44F8A001DD637 /* AppDelegate.m */; };
+		84C1F9251CF44F8A001DD637 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9241CF44F8A001DD637 /* ViewController.m */; };
+		84C1F9281CF44F8A001DD637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C1F9261CF44F8A001DD637 /* Main.storyboard */; };
+		84C1F92A1CF44F8A001DD637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84C1F9291CF44F8A001DD637 /* Assets.xcassets */; };
+		84C1F92D1CF44F8A001DD637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C1F92B1CF44F8A001DD637 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4823BDDFA1AC83FB441CD5DA /* Pods-Marvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig"; sourceTree = "<group>"; };
+		843F806E1CF847A30041470E /* MADDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDownloader.h; sourceTree = "<group>"; };
+		843F806F1CF847A30041470E /* MADDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDownloader.m; sourceTree = "<group>"; };
+		843F80721CF8552C0041470E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		843F80731CF8552C0041470E /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		843F80751CF85E8C0041470E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8453E7361CFCCB960056F102 /* MADHeroDescriprionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHeroDescriprionViewController.h; sourceTree = "<group>"; };
+		8453E7371CFCCB960056F102 /* MADHeroDescriprionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHeroDescriprionViewController.m; sourceTree = "<group>"; };
+		8453E7391CFCCCFA0056F102 /* MADAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADAnimator.h; sourceTree = "<group>"; };
+		8453E73A1CFCCCFA0056F102 /* MADAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADAnimator.m; sourceTree = "<group>"; };
+		8453E73C1CFDA83A0056F102 /* MADHero+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MADHero+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MADHero+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8453E73E1CFDA83A0056F102 /* MADHero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHero.h; sourceTree = "<group>"; };
+		8453E73F1CFDA83A0056F102 /* MADHero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHero.m; sourceTree = "<group>"; };
+		848E5B421CF879430055A64B /* MADHeroesParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADHeroesParser.h; sourceTree = "<group>"; };
+		848E5B431CF879430055A64B /* MADHeroesParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADHeroesParser.m; sourceTree = "<group>"; };
+		848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADCoreDataStack.h; sourceTree = "<group>"; };
+		848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADCoreDataStack.m; sourceTree = "<group>"; };
+		848E5B491CF9DC810055A64B /* Marvel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marvel.xcdatamodel; sourceTree = "<group>"; };
+		848E5B601CFA0B1E0055A64B /* MADCustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADCustomCollectionViewCell.h; path = ../MADCustomCollectionViewCell.h; sourceTree = "<group>"; };
+		848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADCustomCollectionViewCell.m; path = ../MADCustomCollectionViewCell.m; sourceTree = "<group>"; };
+		848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MADCustomCollectionViewCell.xib; path = ../MADCustomCollectionViewCell.xib; sourceTree = "<group>"; };
+		84C1F91A1CF44F89001DD637 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C1F91E1CF44F8A001DD637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84C1F9201CF44F8A001DD637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84C1F9211CF44F8A001DD637 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84C1F9231CF44F8A001DD637 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		84C1F9241CF44F8A001DD637 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		84C1F9271CF44F8A001DD637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84C1F9291CF44F8A001DD637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84C1F92C1CF44F8A001DD637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84C1F92E1CF44F8A001DD637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA5B77E926C6660DBFF476F /* Pods-Marvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel/Pods-Marvel.release.xcconfig"; sourceTree = "<group>"; };
+		D5EA5B6017E7BE33456FF140 /* libPods-Marvel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Marvel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84C1F9171CF44F89001DD637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3CA8337DE785150E8389A3 /* libPods-Marvel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DCB3E17D24CB4692C932402 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5EA5B6017E7BE33456FF140 /* libPods-Marvel.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8453E7421CFF34680056F102 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				8453E7391CFCCCFA0056F102 /* MADAnimator.h */,
+				8453E73A1CFCCCFA0056F102 /* MADAnimator.m */,
+			);
+			name = Animation;
+			sourceTree = "<group>";
+		};
+		8453E7431CFF348F0056F102 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84C1F9231CF44F8A001DD637 /* ViewController.h */,
+				84C1F9241CF44F8A001DD637 /* ViewController.m */,
+				8453E7361CFCCB960056F102 /* MADHeroDescriprionViewController.h */,
+				8453E7371CFCCB960056F102 /* MADHeroDescriprionViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8453E7441CFF34C10056F102 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8453E73C1CFDA83A0056F102 /* MADHero+CoreDataProperties.h */,
+				8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */,
+				8453E73E1CFDA83A0056F102 /* MADHero.h */,
+				8453E73F1CFDA83A0056F102 /* MADHero.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8453E7451CFF34D80056F102 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				848E5B601CFA0B1E0055A64B /* MADCustomCollectionViewCell.h */,
+				848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */,
+				848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		84C1F9111CF44F89001DD637 = {
+			isa = PBXGroup;
+			children = (
+				843F80751CF85E8C0041470E /* Default-568h@2x.png */,
+				84C1F91C1CF44F8A001DD637 /* Marvel */,
+				84C1F91B1CF44F89001DD637 /* Products */,
+				C7678C758C84ACBD80FBEA86 /* Pods */,
+				2DCB3E17D24CB4692C932402 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84C1F91B1CF44F89001DD637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C1F91A1CF44F89001DD637 /* Marvel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84C1F91C1CF44F8A001DD637 /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				8453E7431CFF348F0056F102 /* Controllers */,
+				8453E7421CFF34680056F102 /* Animation */,
+				8453E7441CFF34C10056F102 /* Models */,
+				8453E7451CFF34D80056F102 /* Views */,
+				84C1F9201CF44F8A001DD637 /* AppDelegate.h */,
+				84C1F9211CF44F8A001DD637 /* AppDelegate.m */,
+				848E5B421CF879430055A64B /* MADHeroesParser.h */,
+				848E5B431CF879430055A64B /* MADHeroesParser.m */,
+				848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */,
+				848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */,
+				843F806E1CF847A30041470E /* MADDownloader.h */,
+				843F806F1CF847A30041470E /* MADDownloader.m */,
+				843F80721CF8552C0041470E /* NSString+MD5.h */,
+				843F80731CF8552C0041470E /* NSString+MD5.m */,
+				848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */,
+				84C1F9261CF44F8A001DD637 /* Main.storyboard */,
+				84C1F9291CF44F8A001DD637 /* Assets.xcassets */,
+				84C1F92B1CF44F8A001DD637 /* LaunchScreen.storyboard */,
+				84C1F92E1CF44F8A001DD637 /* Info.plist */,
+				84C1F91D1CF44F8A001DD637 /* Supporting Files */,
+			);
+			path = Marvel;
+			sourceTree = "<group>";
+		};
+		84C1F91D1CF44F8A001DD637 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84C1F91E1CF44F8A001DD637 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7678C758C84ACBD80FBEA86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4823BDDFA1AC83FB441CD5DA /* Pods-Marvel.debug.xcconfig */,
+				8BA5B77E926C6660DBFF476F /* Pods-Marvel.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84C1F9191CF44F89001DD637 /* Marvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C1F9311CF44F8A001DD637 /* Build configuration list for PBXNativeTarget "Marvel" */;
+			buildPhases = (
+				09F5B193E42F1D9729936351 /* Check Pods Manifest.lock */,
+				84C1F9161CF44F89001DD637 /* Sources */,
+				84C1F9171CF44F89001DD637 /* Frameworks */,
+				84C1F9181CF44F89001DD637 /* Resources */,
+				569727D430B5EAAEEF86FE15 /* Embed Pods Frameworks */,
+				3F2121F065E0E6436848AE8B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marvel;
+			productName = Marvel;
+			productReference = 84C1F91A1CF44F89001DD637 /* Marvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84C1F9121CF44F89001DD637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = marydort;
+				TargetAttributes = {
+					84C1F9191CF44F89001DD637 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = S3M44GGB4N;
+					};
+				};
+			};
+			buildConfigurationList = 84C1F9151CF44F89001DD637 /* Build configuration list for PBXProject "Marvel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84C1F9111CF44F89001DD637;
+			productRefGroup = 84C1F91B1CF44F89001DD637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84C1F9191CF44F89001DD637 /* Marvel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84C1F9181CF44F89001DD637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C1F92D1CF44F8A001DD637 /* LaunchScreen.storyboard in Resources */,
+				843F80761CF85E8C0041470E /* Default-568h@2x.png in Resources */,
+				84C1F92A1CF44F8A001DD637 /* Assets.xcassets in Resources */,
+				848E5B641CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib in Resources */,
+				84C1F9281CF44F8A001DD637 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09F5B193E42F1D9729936351 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3F2121F065E0E6436848AE8B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		569727D430B5EAAEEF86FE15 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvel/Pods-Marvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84C1F9161CF44F89001DD637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848E5B471CF9D68C0055A64B /* MADCoreDataStack.m in Sources */,
+				84C1F9251CF44F8A001DD637 /* ViewController.m in Sources */,
+				8453E7381CFCCB960056F102 /* MADHeroDescriprionViewController.m in Sources */,
+				848E5B441CF879430055A64B /* MADHeroesParser.m in Sources */,
+				8453E73B1CFCCCFA0056F102 /* MADAnimator.m in Sources */,
+				84C1F9221CF44F8A001DD637 /* AppDelegate.m in Sources */,
+				843F80741CF8552C0041470E /* NSString+MD5.m in Sources */,
+				8453E7411CFDA83A0056F102 /* MADHero.m in Sources */,
+				848E5B631CFA0B1E0055A64B /* MADCustomCollectionViewCell.m in Sources */,
+				848E5B4A1CF9DC810055A64B /* Marvel.xcdatamodeld in Sources */,
+				84C1F91F1CF44F8A001DD637 /* main.m in Sources */,
+				8453E7401CFDA83A0056F102 /* MADHero+CoreDataProperties.m in Sources */,
+				843F80701CF847A30041470E /* MADDownloader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84C1F9261CF44F8A001DD637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C1F9271CF44F8A001DD637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84C1F92B1CF44F8A001DD637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84C1F92C1CF44F8A001DD637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84C1F92F1CF44F8A001DD637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		84C1F9301CF44F8A001DD637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84C1F9321CF44F8A001DD637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4823BDDFA1AC83FB441CD5DA /* Pods-Marvel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marydort.Marvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84C1F9331CF44F8A001DD637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BA5B77E926C6660DBFF476F /* Pods-Marvel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Marvel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.marydort.Marvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84C1F9151CF44F89001DD637 /* Build configuration list for PBXProject "Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1F92F1CF44F8A001DD637 /* Debug */,
+				84C1F9301CF44F8A001DD637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C1F9311CF44F8A001DD637 /* Build configuration list for PBXNativeTarget "Marvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C1F9321CF44F8A001DD637 /* Debug */,
+				84C1F9331CF44F8A001DD637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				848E5B491CF9DC810055A64B /* Marvel.xcdatamodel */,
+			);
+			currentVersion = 848E5B491CF9DC810055A64B /* Marvel.xcdatamodel */;
+			path = Marvel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 84C1F9121CF44F89001DD637 /* Project object */;
+}
