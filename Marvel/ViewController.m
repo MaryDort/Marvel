@@ -26,6 +26,7 @@
 @property (nonatomic, readwrite, strong) NSFetchRequest *searchFetchRequest;
 @property (nonatomic, readwrite, assign) BOOL searchBarActive;
 @property (nonatomic, readwrite, assign) CGSize sizeToUse;
+@property (nonatomic, readwrite, assign) CGPoint prevCollectionOffset;
 
 @end
 
@@ -50,7 +51,7 @@
     [super viewWillLayoutSubviews];
     
     _collectionView.frame = self.view.frame;
-    _searchBar.frame = CGRectMake(0, 0, self.view.frame.size.width, 50);
+    _searchBar.frame = CGRectMake(0.f, 0.f, self.view.frame.size.width, 50.f);
     _sizeToUse = self.view.frame.size;
 }
 
@@ -93,15 +94,8 @@
     if (_sizeToUse.width > _sizeToUse.height) {
         return CGSizeMake(_sizeToUse.width/3 - 20, _sizeToUse.height/2 - 10);
     }
+    
     return CGSizeMake(_sizeToUse.width/2 - 10, _sizeToUse.height/3 - 10);
-}
-
-#pragma mark - Action
-
-- (IBAction)refreshPage:(UIRefreshControl *)sender {
-    [[MADDownloader sharedDownloader] downloadInfoWithComplitionBlock:^{
-        [_refreshControl endRefreshing];
-    }];
 }
 
 #pragma mark - protocolUIContentContainer
@@ -113,11 +107,33 @@
     [_collectionView.collectionViewLayout invalidateLayout];
 }
 
+#pragma mark - Action
+
+- (IBAction)refreshPage:(UIRefreshControl *)sender {
+    [[MADDownloader sharedDownloader] downloadInfoWithComplitionBlock:^{
+        [_refreshControl endRefreshing];
+    }];
+}
+
 #pragma mark - Private
 
 - (void)loadData {
     [[MADDownloader sharedDownloader] downloadInfoWithComplitionBlock:^{
     }];
+}
+
+- (void)filterContentForSearchText:(NSString*)searchText {
+    if (_managedObjectContext) {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name BEGINSWITH[cd] %@", searchText];
+        NSError *error;
+        
+        self.searchFetchRequest.predicate = predicate;
+        _filteredList = [_managedObjectContext executeFetchRequest:self.searchFetchRequest error:&error];
+        
+        if (error) {
+            NSLog(@"%@", [error description]);
+        }
+    }
 }
 
 #pragma mark - GETmethods
@@ -151,13 +167,13 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (!_searchBarActive) {
-        id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
+        id <NSFetchedResultsSectionInfo> sectionInfo = self.fetchedResultsController.sections[section];
         NSLog(@"%lu", (unsigned long)[sectionInfo numberOfObjects]);
         
-        return [sectionInfo numberOfObjects];
+        return sectionInfo.numberOfObjects;
     }
     
-     NSLog(@"%lu", (unsigned long)_filteredList.count);
+    NSLog(@"%lu", (unsigned long)_filteredList.count);
     return _filteredList.count;
 }
 
@@ -174,10 +190,10 @@
     cell.heroNamelabel.text = hero.name;
     
     if (!hero.image) {
-        [[MADDownloader sharedDownloader] downloadImageByURI:hero.imageURL
-                                         withComplitionBlock:^(NSData *image) {
-                                             hero.image = image;
-                                         }];
+        [[MADDownloader sharedDownloader] downloadImageByURI:hero.imageURL withComplitionBlock:^(NSData *image) {
+            cell.heroPhotoImageView.image = [UIImage imageWithData:image];
+            hero.image = image;
+        }];
     } else {
         cell.heroPhotoImageView.image = [UIImage imageWithData:hero.image];
     }
@@ -258,20 +274,6 @@
     [_collectionView reloadData];
 }
 
-- (void)filterContentForSearchText:(NSString*)searchText {
-    if (_managedObjectContext) {
-        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"%K BEGINSWITH[cd] %@", @"name", searchText];
-        NSError *error;
-        
-        self.searchFetchRequest.predicate = predicate;
-        _filteredList = [_managedObjectContext executeFetchRequest:self.searchFetchRequest error:&error];
-        
-        if (error) {
-            NSLog(@"%@", [error description]);
-        }
-    }
-}
-
 #pragma mark - UIViewControllerTransitioningDelegate
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
@@ -294,6 +296,21 @@
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     [_searchBar resignFirstResponder];
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.y < _prevCollectionOffset.y || scrollView.contentOffset.y <= 0) {
+        [UIView animateWithDuration:0.1f
+                         animations:^{
+                             _searchBar.alpha = 1.f;
+                         }];
+    } else {
+        [UIView animateWithDuration:0.1f
+                         animations:^{
+                             _searchBar.alpha = 0.f;
+                         }];
+    }
+    _prevCollectionOffset = scrollView.contentOffset;
 }
 
 @end

@@ -21,6 +21,8 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor clearColor];
+    [self.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                        action:@selector(viewPressed:)]];
     [self createLabel];
 }
 
@@ -84,8 +86,6 @@
     _label.font = [UIFont boldSystemFontOfSize:18.f];
     _label.translatesAutoresizingMaskIntoConstraints = NO;
     _label.userInteractionEnabled = YES;
-    [_label addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                         action:@selector(labelPressed:)]];
     
     [_vibrancyEffectView.contentView addSubview:_label];
     
@@ -120,7 +120,6 @@
                                                           attribute:NSLayoutAttributeTrailing
                                                          multiplier:1.f
                                                            constant:-20.f]];
-
 }
 
 - (void)setInfo:(NSString *)info {
@@ -137,7 +136,7 @@
 
 #pragma mark - Action 
 
-- (IBAction)labelPressed:(UITapGestureRecognizer *)sender {
+- (IBAction)viewPressed:(UITapGestureRecognizer *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
