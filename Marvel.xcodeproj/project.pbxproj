@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6D3CA8337DE785150E8389A3 /* libPods-Marvel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5EA5B6017E7BE33456FF140 /* libPods-Marvel.a */; };
+		842B42F11D1AB834001DF092 /* MADCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 842B42EF1D1AB834001DF092 /* MADCustomCollectionViewCell.m */; };
+		842B42F21D1AB834001DF092 /* MADCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842B42F01D1AB834001DF092 /* MADCustomCollectionViewCell.xib */; };
 		843F80701CF847A30041470E /* MADDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F806F1CF847A30041470E /* MADDownloader.m */; };
 		843F80741CF8552C0041470E /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 843F80731CF8552C0041470E /* NSString+MD5.m */; };
 		843F80761CF85E8C0041470E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 843F80751CF85E8C0041470E /* Default-568h@2x.png */; };
@@ -18,8 +20,6 @@
 		848E5B441CF879430055A64B /* MADHeroesParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B431CF879430055A64B /* MADHeroesParser.m */; };
 		848E5B471CF9D68C0055A64B /* MADCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */; };
 		848E5B4A1CF9DC810055A64B /* Marvel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */; };
-		848E5B631CFA0B1E0055A64B /* MADCustomCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */; };
-		848E5B641CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */; };
 		84C1F91F1CF44F8A001DD637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F91E1CF44F8A001DD637 /* main.m */; };
 		84C1F9221CF44F8A001DD637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9211CF44F8A001DD637 /* AppDelegate.m */; };
 		84C1F9251CF44F8A001DD637 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1F9241CF44F8A001DD637 /* ViewController.m */; };
@@ -30,6 +30,9 @@
 
 /* Begin PBXFileReference section */
 		4823BDDFA1AC83FB441CD5DA /* Pods-Marvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvel/Pods-Marvel.debug.xcconfig"; sourceTree = "<group>"; };
+		842B42EE1D1AB834001DF092 /* MADCustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADCustomCollectionViewCell.h; sourceTree = "<group>"; };
+		842B42EF1D1AB834001DF092 /* MADCustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADCustomCollectionViewCell.m; sourceTree = "<group>"; };
+		842B42F01D1AB834001DF092 /* MADCustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MADCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		843F806E1CF847A30041470E /* MADDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADDownloader.h; sourceTree = "<group>"; };
 		843F806F1CF847A30041470E /* MADDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADDownloader.m; sourceTree = "<group>"; };
 		843F80721CF8552C0041470E /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
@@ -48,9 +51,6 @@
 		848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MADCoreDataStack.h; sourceTree = "<group>"; };
 		848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MADCoreDataStack.m; sourceTree = "<group>"; };
 		848E5B491CF9DC810055A64B /* Marvel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marvel.xcdatamodel; sourceTree = "<group>"; };
-		848E5B601CFA0B1E0055A64B /* MADCustomCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MADCustomCollectionViewCell.h; path = ../MADCustomCollectionViewCell.h; sourceTree = "<group>"; };
-		848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MADCustomCollectionViewCell.m; path = ../MADCustomCollectionViewCell.m; sourceTree = "<group>"; };
-		848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MADCustomCollectionViewCell.xib; path = ../MADCustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		84C1F91A1CF44F89001DD637 /* Marvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C1F91E1CF44F8A001DD637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84C1F9201CF44F8A001DD637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +85,46 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		842B42F31D1AB84D001DF092 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8453E73C1CFDA83A0056F102 /* MADHero+CoreDataProperties.h */,
+				8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */,
+				8453E73E1CFDA83A0056F102 /* MADHero.h */,
+				8453E73F1CFDA83A0056F102 /* MADHero.m */,
+				848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */,
+				848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		842B42F41D1AB875001DF092 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				843F80721CF8552C0041470E /* NSString+MD5.h */,
+				843F80731CF8552C0041470E /* NSString+MD5.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		842B42F51D1AB899001DF092 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				848E5B421CF879430055A64B /* MADHeroesParser.h */,
+				848E5B431CF879430055A64B /* MADHeroesParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		842B42F61D1AB8AA001DF092 /* Downloader */ = {
+			isa = PBXGroup;
+			children = (
+				843F806E1CF847A30041470E /* MADDownloader.h */,
+				843F806F1CF847A30041470E /* MADDownloader.m */,
+			);
+			name = Downloader;
+			sourceTree = "<group>";
+		};
 		8453E7421CFF34680056F102 /* Animation */ = {
 			isa = PBXGroup;
 			children = (
@@ -105,23 +145,12 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
-		8453E7441CFF34C10056F102 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8453E73C1CFDA83A0056F102 /* MADHero+CoreDataProperties.h */,
-				8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */,
-				8453E73E1CFDA83A0056F102 /* MADHero.h */,
-				8453E73F1CFDA83A0056F102 /* MADHero.m */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
 		8453E7451CFF34D80056F102 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				848E5B601CFA0B1E0055A64B /* MADCustomCollectionViewCell.h */,
-				848E5B611CFA0B1E0055A64B /* MADCustomCollectionViewCell.m */,
-				848E5B621CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib */,
+				842B42EE1D1AB834001DF092 /* MADCustomCollectionViewCell.h */,
+				842B42EF1D1AB834001DF092 /* MADCustomCollectionViewCell.m */,
+				842B42F01D1AB834001DF092 /* MADCustomCollectionViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -148,22 +177,16 @@
 		84C1F91C1CF44F8A001DD637 /* Marvel */ = {
 			isa = PBXGroup;
 			children = (
+				84DAA3781D1D58BC008B138B /* Delegate */,
 				8453E7431CFF348F0056F102 /* Controllers */,
 				8453E7421CFF34680056F102 /* Animation */,
-				8453E7441CFF34C10056F102 /* Models */,
 				8453E7451CFF34D80056F102 /* Views */,
-				84C1F9201CF44F8A001DD637 /* AppDelegate.h */,
-				84C1F9211CF44F8A001DD637 /* AppDelegate.m */,
-				848E5B421CF879430055A64B /* MADHeroesParser.h */,
-				848E5B431CF879430055A64B /* MADHeroesParser.m */,
-				848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */,
-				848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */,
-				843F806E1CF847A30041470E /* MADDownloader.h */,
-				843F806F1CF847A30041470E /* MADDownloader.m */,
-				843F80721CF8552C0041470E /* NSString+MD5.h */,
-				843F80731CF8552C0041470E /* NSString+MD5.m */,
-				848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */,
+				842B42F41D1AB875001DF092 /* Categories */,
+				842B42F51D1AB899001DF092 /* Parser */,
+				842B42F31D1AB84D001DF092 /* CoreData */,
+				842B42F61D1AB8AA001DF092 /* Downloader */,
 				84C1F9261CF44F8A001DD637 /* Main.storyboard */,
+				848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */,
 				84C1F9291CF44F8A001DD637 /* Assets.xcassets */,
 				84C1F92B1CF44F8A001DD637 /* LaunchScreen.storyboard */,
 				84C1F92E1CF44F8A001DD637 /* Info.plist */,
@@ -178,6 +201,15 @@
 				84C1F91E1CF44F8A001DD637 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84DAA3781D1D58BC008B138B /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				84C1F9201CF44F8A001DD637 /* AppDelegate.h */,
+				84C1F9211CF44F8A001DD637 /* AppDelegate.m */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 		C7678C758C84ACBD80FBEA86 /* Pods */ = {
@@ -253,7 +285,7 @@
 				84C1F92D1CF44F8A001DD637 /* LaunchScreen.storyboard in Resources */,
 				843F80761CF85E8C0041470E /* Default-568h@2x.png in Resources */,
 				84C1F92A1CF44F8A001DD637 /* Assets.xcassets in Resources */,
-				848E5B641CFA0B1E0055A64B /* MADCustomCollectionViewCell.xib in Resources */,
+				842B42F21D1AB834001DF092 /* MADCustomCollectionViewCell.xib in Resources */,
 				84C1F9281CF44F8A001DD637 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +351,9 @@
 				848E5B441CF879430055A64B /* MADHeroesParser.m in Sources */,
 				8453E73B1CFCCCFA0056F102 /* MADAnimator.m in Sources */,
 				84C1F9221CF44F8A001DD637 /* AppDelegate.m in Sources */,
+				842B42F11D1AB834001DF092 /* MADCustomCollectionViewCell.m in Sources */,
 				843F80741CF8552C0041470E /* NSString+MD5.m in Sources */,
 				8453E7411CFDA83A0056F102 /* MADHero.m in Sources */,
-				848E5B631CFA0B1E0055A64B /* MADCustomCollectionViewCell.m in Sources */,
 				848E5B4A1CF9DC810055A64B /* Marvel.xcdatamodeld in Sources */,
 				84C1F91F1CF44F8A001DD637 /* main.m in Sources */,
 				8453E7401CFDA83A0056F102 /* MADHero+CoreDataProperties.m in Sources */,
