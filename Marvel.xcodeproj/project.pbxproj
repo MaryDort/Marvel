@@ -85,9 +85,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		842B42F31D1AB84D001DF092 /* CoreData */ = {
+		842B42F31D1AB84D001DF092 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				842B42F51D1AB899001DF092 /* Parser */,
 				8453E73C1CFDA83A0056F102 /* MADHero+CoreDataProperties.h */,
 				8453E73D1CFDA83A0056F102 /* MADHero+CoreDataProperties.m */,
 				8453E73E1CFDA83A0056F102 /* MADHero.h */,
@@ -95,7 +96,7 @@
 				848E5B451CF9D68C0055A64B /* MADCoreDataStack.h */,
 				848E5B461CF9D68C0055A64B /* MADCoreDataStack.m */,
 			);
-			name = CoreData;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		842B42F41D1AB875001DF092 /* Categories */ = {
@@ -182,8 +183,7 @@
 				8453E7421CFF34680056F102 /* Animation */,
 				8453E7451CFF34D80056F102 /* Views */,
 				842B42F41D1AB875001DF092 /* Categories */,
-				842B42F51D1AB899001DF092 /* Parser */,
-				842B42F31D1AB84D001DF092 /* CoreData */,
+				842B42F31D1AB84D001DF092 /* Model */,
 				842B42F61D1AB8AA001DF092 /* Downloader */,
 				84C1F9261CF44F8A001DD637 /* Main.storyboard */,
 				848E5B481CF9DC810055A64B /* Marvel.xcdatamodeld */,
